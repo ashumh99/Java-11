@@ -1,16 +1,32 @@
 package com.costrategix.training;
 
+import com.sun.jdi.Value;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        byte byteValue=10;
-        short shortValue=20;
-        int intValue=50;
-        long longTotal=50000L + 10L*(byteValue + shortValue + intValue);
-        System.out.println(longTotal);
 
-        short shortTotal=(short)(10000+100*(byteValue + shortValue + intValue));
+        float myMinFloatValue=Float.MIN_VALUE;
+        float myMaxFloatValue=Float.MAX_VALUE;
+        System.out.println("Minimum Float Value = "+myMinFloatValue);
+        System.out.println("Maximum Float Value = "+myMaxFloatValue);
+
+        double myMinDoubleValue=Double.MIN_VALUE;
+        double myMaxDoubleValue=Double.MAX_VALUE;
+        System.out.println("Minimum Double Value = "+myMinDoubleValue);
+        System.out.println("Maximum Double Value = "+myMaxDoubleValue);
+
+        int myIntValue = 5/3;
+        float myFloatValue=5f/3f;
+        double myDoubleValue=5d/3d;
+        System.out.println("MyIntValue = "+myIntValue);
+        System.out.println("MyFloatValue = "+myFloatValue);
+        System.out.println("MyDoubleValue = "+myDoubleValue);
+
+        //conversion from pound to kg
+        double numberOfPounds=300d;
+        double convertedKiloGrams=numberOfPounds*0.45359237d;
+        System.out.println("Converted Kilograms = "+convertedKiloGrams);
 
     }
 }
